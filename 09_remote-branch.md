@@ -72,13 +72,13 @@ $ git push origin main # origin은 원격저장소 별칭, main은 브랜치 이
 <img src="https://user-images.githubusercontent.com/45596014/194697605-2918999e-daf2-4fb0-8aa3-203941daac06.jpg">
 
 ### **3. 브랜치 확인**
-2-1. 깃허브에서 해당 저장소의 브랜치를 확인합니다.
+3-1. 깃허브에서 해당 저장소의 브랜치를 확인합니다.
 
 <kbd>
 <img src="https://user-images.githubusercontent.com/45596014/194325158-aafa553a-4ac8-453e-b514-d4ed248a9665.jpg">
 </kbd>
 
-2-2. 다시 현재 로컬저장소의 브랜치를 확인합니다.
+3-2. 다시 현재 로컬저장소의 브랜치를 확인합니다.
 >※ 실습을 위해 main 브랜치 외 3개 브랜치가 생성된 상태입니다.
 
 <kbd>
@@ -136,7 +136,7 @@ clone 명령어를 통해 저장소를 복제할 때 원격 저장소에 등록�
 <img src="https://user-images.githubusercontent.com/45596014/194691886-802e1dfa-eee6-4e71-a8a1-427f4006e117.jpg">
 </kbd>
 
-### 2. ### 복사된 저장소의 브랜치를 확인하기
+### 2. 복사된 저장소의 브랜치를 확인하기
 >※ clone은 원격 저장소의 모든 브랜치 정보를 한 번에 다 가져오지 않습니다.
 ```bash
 $ git branch -v
@@ -145,7 +145,7 @@ $ git branch -v
 <img src="https://user-images.githubusercontent.com/45596014/194698594-5c2131d0-903e-4597-8e99-760e35dd7366.jpg">
 </kbd>
 
-### 3. ### 원격저장소의 브랜치 목록을 확인하기
+### 3. 원격저장소의 브랜치 목록을 확인하기
 ```bash
 $ git branch -r
 ```
@@ -207,7 +207,7 @@ $ git push
 $ cd ../study # 원본 저장소로 이동
 $ git checkout feature # 브랜치 변경
 $ git pull # 원격 저장소에서 내려받기
-$ cat test.md
+$ cat test.md # 내용 확인
 ```
 <kbd>
 <img src="https://user-images.githubusercontent.com/45596014/194699136-baebee16-ae1a-4bfe-bea6-3269ec989034.jpg">
@@ -258,7 +258,7 @@ $ git push
 
 <kbd>
 <img src="https://user-images.githubusercontent.com/45596014/194700398-8d0f9499-bfbb-4063-85d8-8f81b904905d.jpg">
-<img src="https://user-images.githubusercontent.com/45596014/194700095-b69b7489-eb58-469f-86de-0273e94b07f2.png">
+<img src="https://user-images.githubusercontent.com/45596014/194701513-45d8c899-2f62-4854-8448-8313cabc32e7.jpg">
 </kbd>
 
 <br>
