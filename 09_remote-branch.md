@@ -80,7 +80,7 @@ $ git push origin main # origin은 원격저장소 별칭, main은 브랜치 이
 <img src="https://user-images.githubusercontent.com/45596014/194325158-aafa553a-4ac8-453e-b514-d4ed248a9665.jpg">
 </kbd>
 
-<br>
+<br><br>
 
 3-2. 다시 현재 로컬저장소의 브랜치를 확인합니다.
 >※ 실습을 위해 main 브랜치 외 3개 브랜치가 생성된 상태입니다.
@@ -109,12 +109,12 @@ $ git push origin main # origin은 원격저장소 별칭, main은 브랜치 이
 
 ### 브랜치를 수동으로 지정할 때, 콜론(:)으로 구분합니다.
 ```bash
-$ git push origin 브랜치이름:새로운브랜치 # `현재브랜치`를 서버(origin)의 `새로운브랜치` 이름으로 전송
+$ git push origin 브랜치이름:새로운브랜치 # "현재브랜치"를 서버(origin)의 "새로운브랜치" 이름으로 전송
 ```
 
 <kbd>
 <img height="230" src="https://user-images.githubusercontent.com/45596014/194698329-a0698858-5c0c-4bc0-be94-db7bd2220bda.jpg">
-<img height="230" src="https://user-images.githubusercontent.com/45596014/194683096-3fff5e77-2231-4783-af77-09214365c86b.jpg">
+<img height="230" src="https://user-images.githubusercontent.com/45596014/194715583-8dc43a10-e2cc-46f4-9a97-8f922b213bc1.jpg">
 </kbd>
 
 <br><br>
@@ -125,14 +125,14 @@ $ git push origin 브랜치이름:새로운브랜치 # `현재브랜치`를 서�
 >※ 업스트림(upstream)은 브랜치 추적을 다르게 표현한 것입니다.
 
 <kbd>
-<img src="https://user-images.githubusercontent.com/45596014/194685358-a2a3097d-eb4d-43e3-980c-59a530e3953a.png">
+<img src="https://user-images.githubusercontent.com/45596014/194715633-84da9ee4-cc2f-44b7-89ab-40bf990826a1.jpg">
 </kbd>
 
-### **실험**
+### **실습하기**
 리모트 브랜치와 로컬 브랜치를 연결해주는 중간 다리 역할을 합니다.<br>
 clone 명령어를 통해 저장소를 복제할 때 원격 저장소에 등록된 트래킹 브랜치들을 자동으로 함께 설정합니다.<br>
 <kbd>
-<img src="https://user-images.githubusercontent.com/45596014/194686838-ed0dd739-f4b4-4a67-8f58-940579d6d254.png">
+<img src="https://user-images.githubusercontent.com/45596014/194715681-05ec8dc3-085e-4418-bdf8-aa80182f9d0e.jpg">
 </kbd>
 
 ### 1. 원격저장소를 복제 저장소로 clone 합니다.<br>
@@ -156,7 +156,7 @@ $ git branch -vv # vv속성 - 트래킹 브랜치 정보 확인
 
 <br>
 
-### 6. 복제된 저장소에 새로운 업스트림 만들기<br>
+### 3. 복제된 저장소에 새로운 업스트림 만들기<br>
 다른 브랜치를 pull 받아 트래킹 브랜치를 활성화 하거나, 직접 트래킹 브랜치를 지정할 수 있습니다.
 - 업스트림 동작을 위한 트래킹 브랜치는 직접 명령어를 실행하여 생성할 수 있습니다.
     >※ [이전](#bookmark-이름이-다른-브랜치)에 feature 브랜치를 function 브랜치로 등록했습니다.
@@ -169,7 +169,7 @@ $ git checkout --track origin/브랜치이름 # 업스트림 브랜치 생성
 
 <br>
 
-### 7. 커밋 후 트래킹 브랜치 확인<br>
+### 4. 커밋 후 트래킹 브랜치 확인<br>
 브랜치 정보에 ahead 1이 표시되는데, 원격 저장소로 전송되지 않은 커밋을 의미합니다.
 ```bash
 $ echo test > README.md # test.md에 test내용 덮어쓰기
@@ -179,7 +179,7 @@ $ git commit -am "copy commit" # 커밋
 <img src="https://user-images.githubusercontent.com/45596014/194698931-5a422fb3-bd7a-4f33-833d-4f95608d8d3a.jpg">
 </kbd>
 
-### 8. 커밋 전송<br>
+### 5. 커밋 전송<br>
 ```bash
 $ git push
 ```
@@ -187,7 +187,10 @@ $ git push
 <img src="https://user-images.githubusercontent.com/45596014/194699031-b0c8c226-80bc-4c2e-b319-57249d947428.jpg">
 </kbd>
 
-### 9.  원본 저장소로 이동 후 확인
+### 6.  원본 저장소로 이동 후 확인
+원본저장소의 브랜치를 feature로 바꾸고 pull을 하게되면,<br>
+원본저장소의 트래킹 브랜치에 따라 `원격저장소의 function 브랜치`가<br>
+`원본저장소의 feature 브랜치`로 pull 됩니다.
 ```bash
 $ cd ../study # 원본 저장소로 이동
 $ git checkout feature # 브랜치 변경
