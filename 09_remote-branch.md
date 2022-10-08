@@ -30,7 +30,7 @@
 
 ### **2. 로컬저장소와 원격저장소를 연결합니다.**
 <kbd>
-<img src="https://user-images.githubusercontent.com/45596014/194304433-9f445569-2861-4535-b5c0-c3e3292940bd.jpg">
+<img src="https://user-images.githubusercontent.com/45596014/194697497-74f62d65-e3e4-496d-9b49-18ba3d5920f1.jpg">
 </kbd>
 
 <br>
@@ -58,7 +58,7 @@
 $ git remote show origin # origin은 원격 브랜치명
 ```
 <kbd>
-<img src="https://user-images.githubusercontent.com/45596014/194318629-a7556176-0dfe-44fb-b084-84c95903eb18.jpg">
+<img src="https://user-images.githubusercontent.com/45596014/194697582-415551ff-3904-486a-9998-6eec36d51f8d.jpg">
 </kbd>
 
 <br>
@@ -69,7 +69,7 @@ push를 하게되면 원격저장소는 로컬저장소와 동일한 branch를 �
 ```bash
 $ git push origin main # origin은 원격저장소 별칭, main은 브랜치 이름
 ```
-<img src="https://user-images.githubusercontent.com/45596014/194323234-b491f08f-6c72-42aa-8df4-05de24fb17c9.jpg">
+<img src="https://user-images.githubusercontent.com/45596014/194697605-2918999e-daf2-4fb0-8aa3-203941daac06.jpg">
 
 ### **3. 브랜치 확인**
 2-1. 깃허브에서 해당 저장소의 브랜치를 확인합니다.
@@ -79,9 +79,10 @@ $ git push origin main # origin은 원격저장소 별칭, main은 브랜치 이
 </kbd>
 
 2-2. 다시 현재 로컬저장소의 브랜치를 확인합니다.
+>※ 실습을 위해 main 브랜치 외 3개 브랜치가 생성된 상태입니다.
 
 <kbd>
-<img src="https://user-images.githubusercontent.com/45596014/194326239-ef53537f-ab9b-43bd-8aa7-2bee90c4dc81.jpg">
+<img src="https://user-images.githubusercontent.com/45596014/194698116-3d7418f5-680e-44b0-ac01-f48a8d866c1c.jpg">
 </kbd>
 
 <br>
@@ -89,14 +90,9 @@ $ git push origin main # origin은 원격저장소 별칭, main은 브랜치 이
 ### **3. 브랜치 업로드**
 원격저장소에 새로운 브랜치를 생성하려면 로컬저장소에서 브랜치 전송 명령을 실행해주어야 합니다.<br>
 >※ 2번과 동일하며, 브랜치 이름만 변경합니다.
-1. 브랜치 생성<br>
-<kbd>
-<img src="https://user-images.githubusercontent.com/45596014/194333677-2111d656-144f-407d-b3e1-2f3cceac1d88.jpg">
-</kbd>
 
-2. 브랜치 업로드<br>
 <kbd>
-<img height="230" src="https://user-images.githubusercontent.com/45596014/194334702-9ff209dd-1706-4b4d-8276-146093015658.jpg">
+<img height="230" src="https://user-images.githubusercontent.com/45596014/194698253-0a067b1d-8977-4b10-8ff9-99d33a8696bf.jpg">
 <img height="230" src="https://user-images.githubusercontent.com/45596014/194335536-47480706-3a05-47fb-bb89-c5c7ac388bf3.jpg">
 </kbd>
 
@@ -113,7 +109,7 @@ $ git push origin 브랜치이름:새로운브랜치 # 현재 브랜치를 서�
 ```
 
 <kbd>
-<img height="230" src="https://user-images.githubusercontent.com/45596014/194682657-228b7065-fdab-48c8-a001-49277a5b39c1.jpg">
+<img height="230" src="https://user-images.githubusercontent.com/45596014/194698329-a0698858-5c0c-4bc0-be94-db7bd2220bda.jpg">
 <img height="230" src="https://user-images.githubusercontent.com/45596014/194683096-3fff5e77-2231-4783-af77-09214365c86b.jpg">
 </kbd>
 
@@ -146,7 +142,7 @@ clone 명령어를 통해 저장소를 복제할 때 원격 저장소에 등록�
     $ git branch -v
     ```
     <kbd>
-    <img src="https://user-images.githubusercontent.com/45596014/194691932-3d24a7ef-5456-4b05-8395-7b381258b8a8.jpg">
+    <img src="https://user-images.githubusercontent.com/45596014/194698594-5c2131d0-903e-4597-8e99-760e35dd7366.jpg">
     </kbd>
 
 3. 원격저장소의 브랜치 목록을 확인하기
@@ -154,7 +150,7 @@ clone 명령어를 통해 저장소를 복제할 때 원격 저장소에 등록�
     $ git branch -r
     ```
     <kbd>
-    <img src="https://user-images.githubusercontent.com/45596014/194691976-02785821-194f-4459-b3b0-4b1f0dcc801e.jpg">
+    <img src="https://user-images.githubusercontent.com/45596014/194698470-abd5ebda-a8f8-45ce-a2c7-2b049ab5b995.jpg">
     </kbd>
 
 4. 모든 브랜치 정보 확인하기
@@ -163,7 +159,7 @@ clone 명령어를 통해 저장소를 복제할 때 원격 저장소에 등록�
     $ git branch -a
     ```
     <kbd>
-    <img src="https://user-images.githubusercontent.com/45596014/194692020-67f8935f-627b-4d21-a5e7-9817fe064872.jpg">
+    <img src="https://user-images.githubusercontent.com/45596014/194698584-b3ee7a90-bfcd-492a-bb64-47244c0ccff1.jpg">
     </kbd>
 
 5. 복제 저장소의 트래킹 브랜치를 확인하기
@@ -171,7 +167,7 @@ clone 명령어를 통해 저장소를 복제할 때 원격 저장소에 등록�
     $ git branch -vv # vv 속성 - 트래킹 브랜치
     ```
     <kbd>
-    <img src="https://user-images.githubusercontent.com/45596014/194692055-c801d40b-9baf-4946-9772-89f409c99097.jpg">
+    <img src="https://user-images.githubusercontent.com/45596014/194698643-2191f1e1-216a-4283-896f-a8753b5cf23e.jpg">
     </kbd>
 
     - 복제 시 모든 브랜치를 한 번에 복제하지 않아 트래킹 브랜치가 하나만 출력되었습니다.<br>
@@ -180,22 +176,22 @@ clone 명령어를 통해 저장소를 복제할 때 원격 저장소에 등록�
 6. 복제된 저장소에 새로운 업스트림 만들기<br>
     다른 브랜치를 pull 받아 트래킹 브랜치를 활성화 하거나, 직접 트래킹 브랜치를 지정할 수 있습니다.
    - 업스트림 동작을 위한 트래킹 브랜치는 직접 명령어를 실행하여 생성할 수 있습니다.
-    >※ [이전](#bookmark-이름이-다른-브랜치)에 hotfix 브랜치를 feature 브랜치로 등록했습니다.
-    ```
+    >※ [이전](#bookmark-이름이-다른-브랜치)에 feature 브랜치를 function 브랜치로 등록했습니다.
+    ```bash
     $ git checkout --track origin/브랜치이름 # 업스트림 브랜치 생성
     ```
     <kbd>
-    <img src="https://user-images.githubusercontent.com/45596014/194692431-41a7a1f6-9ece-495a-9e83-28fa92661688.jpg">
+    <img src="https://user-images.githubusercontent.com/45596014/194698703-1656dffc-4ee0-4e8c-ac0c-106a68f7385d.jpg">
     </kbd>
 
 7. 커밋 후 트래킹 브랜치 확인<br>
     브랜치 정보에 ahead 1이 표시되는데, 원격 저장소로 전송되지 않은 커밋을 의미합니다.
     ```bash
-    $ echo 'test in copy' > test.md # test.md에 test내용 덮어쓰기
+    $ echo test > README.md # test.md에 test내용 덮어쓰기
     $ git commit -am "copy commit" # 커밋
     ```
     <kbd>
-    <img src="https://user-images.githubusercontent.com/45596014/194692398-b79e643d-b52c-47d2-8626-54b7051e6622.jpg">
+    <img src="https://user-images.githubusercontent.com/45596014/194698931-5a422fb3-bd7a-4f33-833d-4f95608d8d3a.jpg">
     </kbd>
 
 8. 커밋 전송<br>
@@ -203,7 +199,7 @@ clone 명령어를 통해 저장소를 복제할 때 원격 저장소에 등록�
     $ git push
     ```
     <kbd>
-    <img src="https://user-images.githubusercontent.com/45596014/194692597-c93aa227-d479-4d97-97a6-58c75080f039.jpg">
+    <img src="https://user-images.githubusercontent.com/45596014/194699031-b0c8c226-80bc-4c2e-b319-57249d947428.jpg">
     </kbd>
 
 9.  원본 저장소로 이동 후 확인
@@ -214,7 +210,7 @@ clone 명령어를 통해 저장소를 복제할 때 원격 저장소에 등록�
     $ cat test.md
     ```
     <kbd>
-    <img src="https://user-images.githubusercontent.com/45596014/194695608-1c55cfb5-68a1-44bd-9de0-31744c2c8af8.jpg">
+    <img src="https://user-images.githubusercontent.com/45596014/194699136-baebee16-ae1a-4bfe-bea6-3269ec989034.jpg">
     </kbd>
 
 <br>
@@ -238,7 +234,7 @@ $ git checkout -b [새이름] origin/브랜치이름
     $ git branch -r # 원격 브랜치 확인
     ```
     <kbd>
-    <img src="https://user-images.githubusercontent.com/45596014/194695685-ff07a31e-8c43-4263-ae2b-6460d0ad2a40.jpg">
+    <img src="https://user-images.githubusercontent.com/45596014/194699534-022b56cb-9c56-4c4a-9b50-e8604859ec20.jpg">
     <img src="https://user-images.githubusercontent.com/45596014/194695331-a929673a-7ad8-4547-87d6-dbfddd092a2f.png">
     </kbd>
     
@@ -248,5 +244,64 @@ $ git checkout -b [새이름] origin/브랜치이름
     $ git checkout -b aaa origin/aaa # 브랜치 생성 및 이동
     ```
     <kbd>
-    <img src="https://user-images.githubusercontent.com/45596014/194695631-9fbfb83b-a7c6-4cca-b7e2-274896f260b0.jpg">
+    <img src="https://user-images.githubusercontent.com/45596014/194699800-272baf79-e42b-4719-83d5-1a55de94788d.jpg">
+    </kbd>
+4. 파일 수정 후 commit & push
+    파일을 수정하고, push를 통해 해당 커밋을 원격저장소의 aaa 브랜치로 저장합니다. 
+    ```bash
+    $ echo 'test aaa' > README.md
+    $ git commit -am "test aaa"
+    $ git branch -vv
+    $ git push
+    ```
+
+    <kbd>
+    <img src="https://user-images.githubusercontent.com/45596014/194700398-8d0f9499-bfbb-4063-85d8-8f81b904905d.jpg">
+    <img src="https://user-images.githubusercontent.com/45596014/194700095-b69b7489-eb58-469f-86de-0273e94b07f2.png">
+    </kbd>
+
+<br>
+
+## **업스트림 연결**
+기존 브랜치를 업스트림으로 직접 설정이 가능합니다.
+>※ 업스르팀을 직접 설정하면 원격 저장소로 트래킹 브랜치가 설정됩니다.
+```bash
+$ git branch -u origin/브랜치이름 # u 옵션 - [--set-upstream-to]의 약자
+```
+
+1. 브랜치 생성
+    bbb라는 이름의 브랜치를 생성합니다.
+
+    <kbd>
+    <img src="https://user-images.githubusercontent.com/45596014/194700238-04eede0d-2c6b-452e-b4c7-a24ad8a6e7d3.png">
+    </kbd>
+
+2. 서버의 브랜치 정보 갱신
+    원격저장소에서 새로 추가된 브랜치를 로컬 저장소에 갱신합니다.
+    ```bash
+    $ git fetch # 브랜치 갱신
+    $ git branch -r # 원격 브랜치 조회
+    ```
+    <kbd>
+    <img src="https://user-images.githubusercontent.com/45596014/194700426-f9b9edce-fb2d-47a6-9793-2b6c23ddc827.jpg">
+    </kbd>
+
+3. bbb브랜치와 연결할 수 있는 새브랜치 생성
+
+    ```bash
+    $ git checkout -b bug # bug 브랜치 생성
+    $ git branch -vv # 리모트 브랜치 조회
+    ```
+    <kbd>
+    <img src="https://user-images.githubusercontent.com/45596014/194700593-9d304c32-1754-4137-8996-d168541c1e06.jpg">
+    </kbd>
+4. bbb에 대한 bug 업스트림 설정
+    로컬저장소의 bug 브랜치가 원격저장소의 bbb 리모트 브랜치의 트래킹 브랜치로 업스트림 되었습니다.
+    ```bash
+    $ git branch -u origin/bbb # 업스트림 연결
+    $ git branch -vv # 리모트 브랜치 조회
+    ```
+    
+    <kbd>
+    <img src="https://user-images.githubusercontent.com/45596014/194700753-2597a8a6-ece0-447e-ba71-7460ea45698e.jpg">
     </kbd>
