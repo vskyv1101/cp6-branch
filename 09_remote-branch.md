@@ -96,6 +96,30 @@ $ git push origin main # origin은 원격저장소 별칭, main은 브랜치 이
 
 2. 브랜치 업로드<br>
 <kbd>
-<img src="https://user-images.githubusercontent.com/45596014/194334702-9ff209dd-1706-4b4d-8276-146093015658.jpg">
-<img src="https://user-images.githubusercontent.com/45596014/194335536-47480706-3a05-47fb-bb89-c5c7ac388bf3.jpg">
+<img height="230" src="https://user-images.githubusercontent.com/45596014/194334702-9ff209dd-1706-4b4d-8276-146093015658.jpg">
+<img height="230" src="https://user-images.githubusercontent.com/45596014/194335536-47480706-3a05-47fb-bb89-c5c7ac388bf3.jpg">
 </kbd>
+
+<br>
+
+## **:bookmark: 이름이 다른 브랜치**
+로컬저장소와 원격저장소의 브랜치 이름을 동일하게 사용하기 어려울 때가 있습니다.<br>
+>※ 다른 개발자가 만든 원격 서버의 브랜치를 테스트할 때<br>
+>&nbsp;&nbsp;&nbsp;&nbsp;자신의 브랜치 이름과 동일하면 충돌이 생기게됩니다.
+
+### 브랜치를 수동으로 지정할 때, 콜론(:)으로 구분합니다.
+```bash
+$ git push origin 브랜치이름:새로운브랜치 # 현재 브랜치를 서버(origin)의 새로운 브랜치 이름으로 전송
+```
+
+<kbd>
+<img height="230" src="https://user-images.githubusercontent.com/45596014/194682657-228b7065-fdab-48c8-a001-49277a5b39c1.jpg">
+<img height="230" src="https://user-images.githubusercontent.com/45596014/194683096-3fff5e77-2231-4783-af77-09214365c86b.jpg">
+</kbd>
+
+<br>
+
+## **:metro: 업스트림 트래킹**
+로컬저장소의 브랜치와 원격장소의 브랜치는 업로드할 수 있도록 `매칭`되어있습니다.<br>
+이러한 `매칭을 업스트림 트래킹`이라고 합니다.
+>※ 업스트림(upstream)은 브랜치 추적을 다르게 표현한 것입니다.
