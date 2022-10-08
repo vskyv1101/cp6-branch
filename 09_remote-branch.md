@@ -214,7 +214,7 @@ clone 명령어를 통해 저장소를 복제할 때 원격 저장소에 등록�
     $ cat test.md
     ```
     <kbd>
-    <img src="https://user-images.githubusercontent.com/45596014/194694320-d42d7e6c-c339-46e4-9f04-07da2273c900.jpg">
+    <img src="https://user-images.githubusercontent.com/45596014/194695608-1c55cfb5-68a1-44bd-9de0-31744c2c8af8.jpg">
     </kbd>
 
 <br>
@@ -225,3 +225,28 @@ clone 명령어를 통해 저장소를 복제할 때 원격 저장소에 등록�
 ```bash
 $ git checkout -b [새이름] origin/브랜치이름
 ```
+
+1. 브랜치 생성<br>
+<kbd>
+<img src="https://user-images.githubusercontent.com/45596014/194694836-e44ed6e5-1b1e-493b-b15c-66a3b007cd8e.jpg">
+<img src="https://user-images.githubusercontent.com/45596014/194694906-acb13f92-6dbe-44f5-87c2-3d823fbcd276.jpg">
+</kbd>
+
+2. 원격저장소의 브랜치 정보 로컬저장소로 가져오기
+    ```bash
+    $ git fetch # 브랜치 커밋 가져오기
+    $ git branch -r # 원격 브랜치 확인
+    ```
+    <kbd>
+    <img src="https://user-images.githubusercontent.com/45596014/194695685-ff07a31e-8c43-4263-ae2b-6460d0ad2a40.jpg">
+    <img src="https://user-images.githubusercontent.com/45596014/194695331-a929673a-7ad8-4547-87d6-dbfddd092a2f.png">
+    </kbd>
+    
+3. 원격 브랜치 기반으로 로컬 브랜치 생성<br>
+    origin/aaa 리모트 브랜치를 기반으로 로컬저장소에 aaa 브랜치를 생성합니다.
+    ```bash
+    $ git checkout -b aaa origin/aaa # 브랜치 생성 및 이동
+    ```
+    <kbd>
+    <img src="https://user-images.githubusercontent.com/45596014/194695631-9fbfb83b-a7c6-4cca-b7e2-274896f260b0.jpg">
+    </kbd>
