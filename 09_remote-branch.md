@@ -295,10 +295,14 @@ $ git branch -u origin/브랜치이름 # u 옵션 - [--set-upstream-to]의 약�
     <img src="https://user-images.githubusercontent.com/45596014/194715214-4e955dd4-79f5-4c99-a952-6db7e83650aa.jpg">
     </kbd>
 
-    <br><br>
+<br><br>
 
-    [다음 - 브랜치 전송](10_branch-push.md)
+[생성과 이동]()
 
-    <br>
+<br>
 
-    [목록](README.md)
+[다음 - 브랜치 전송](10_branch-push.md)
+
+<br>
+
+[목록](README.md)
