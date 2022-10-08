@@ -123,3 +123,105 @@ $ git push origin 브랜치이름:새로운브랜치 # 현재 브랜치를 서�
 로컬저장소의 브랜치와 원격장소의 브랜치는 업로드할 수 있도록 `매칭`되어있습니다.<br>
 이러한 `매칭을 업스트림 트래킹`이라고 합니다.
 >※ 업스트림(upstream)은 브랜치 추적을 다르게 표현한 것입니다.
+
+<kbd>
+<img src="https://user-images.githubusercontent.com/45596014/194685358-a2a3097d-eb4d-43e3-980c-59a530e3953a.png">
+</kbd>
+
+### **실험**
+리모트 브랜치와 로컬 브랜치를 연결해주는 중간 다리 역할을 합니다.<br>
+clone 명령어를 통해 저장소를 복제할 때 원격 저장소에 등록된 트래킹 브랜치들을 자동으로 함께 설정합니다.<br>
+<kbd>
+<img src="https://user-images.githubusercontent.com/45596014/194686838-ed0dd739-f4b4-4a67-8f58-940579d6d254.png">
+</kbd>
+
+1. 원격저장소를 복제 저장소로 clone 합니다.<br>
+    <kbd>
+    <img src="https://user-images.githubusercontent.com/45596014/194691886-802e1dfa-eee6-4e71-a8a1-427f4006e117.jpg">
+    </kbd>
+
+2. 복사된 저장소의 브랜치를 확인하기
+    >※ clone은 원격 저장소의 모든 브랜치 정보를 한 번에 다 가져오지 않습니다.
+    ```bash
+    $ git branch -v
+    ```
+    <kbd>
+    <img src="https://user-images.githubusercontent.com/45596014/194691932-3d24a7ef-5456-4b05-8395-7b381258b8a8.jpg">
+    </kbd>
+
+3. 원격저장소의 브랜치 목록을 확인하기
+    ```bash
+    $ git branch -r
+    ```
+    <kbd>
+    <img src="https://user-images.githubusercontent.com/45596014/194691976-02785821-194f-4459-b3b0-4b1f0dcc801e.jpg">
+    </kbd>
+
+4. 모든 브랜치 정보 확인하기
+    >※ 이와같이 저장소를 복제할 경우 원본과 동일한 트래킹 브랜치가 자동으로 설정됩니다.
+    ```bash
+    $ git branch -a
+    ```
+    <kbd>
+    <img src="https://user-images.githubusercontent.com/45596014/194692020-67f8935f-627b-4d21-a5e7-9817fe064872.jpg">
+    </kbd>
+
+5. 복제 저장소의 트래킹 브랜치를 확인하기
+    ```bash
+    $ git branch -vv # vv 속성 - 트래킹 브랜치
+    ```
+    <kbd>
+    <img src="https://user-images.githubusercontent.com/45596014/194692055-c801d40b-9baf-4946-9772-89f409c99097.jpg">
+    </kbd>
+
+    - 복제 시 모든 브랜치를 한 번에 복제하지 않아 트래킹 브랜치가 하나만 출력되었습니다.<br>
+    - 불필요한 브랜치를 한 번에 다 가져오는 것은 효율성이 떨어집니다.
+
+6. 복제된 저장소에 새로운 업스트림 만들기<br>
+    다른 브랜치를 pull 받아 트래킹 브랜치를 활성화 하거나, 직접 트래킹 브랜치를 지정할 수 있습니다.
+   - 업스트림 동작을 위한 트래킹 브랜치는 직접 명령어를 실행하여 생성할 수 있습니다.
+    >※ [이전](#bookmark-이름이-다른-브랜치)에 hotfix 브랜치를 feature 브랜치로 등록했습니다.
+    ```
+    $ git checkout --track origin/브랜치이름 # 업스트림 브랜치 생성
+    ```
+    <kbd>
+    <img src="https://user-images.githubusercontent.com/45596014/194692431-41a7a1f6-9ece-495a-9e83-28fa92661688.jpg">
+    </kbd>
+
+7. 커밋 후 트래킹 브랜치 확인<br>
+    브랜치 정보에 ahead 1이 표시되는데, 원격 저장소로 전송되지 않은 커밋을 의미합니다.
+    ```bash
+    $ echo 'test in copy' > test.md # test.md에 test내용 덮어쓰기
+    $ git commit -am "copy commit" # 커밋
+    ```
+    <kbd>
+    <img src="https://user-images.githubusercontent.com/45596014/194692398-b79e643d-b52c-47d2-8626-54b7051e6622.jpg">
+    </kbd>
+
+8. 커밋 전송<br>
+    ```bash
+    $ git push
+    ```
+    <kbd>
+    <img src="https://user-images.githubusercontent.com/45596014/194692597-c93aa227-d479-4d97-97a6-58c75080f039.jpg">
+    </kbd>
+
+9.  원본 저장소로 이동 후 확인
+    ```bash
+    $ cd ../study # 원본 저장소로 이동
+    $ git checkout feature # 브랜치 변경
+    $ git pull # 원격 저장소에서 내려받기
+    $ cat test.md
+    ```
+    <kbd>
+    <img src="https://user-images.githubusercontent.com/45596014/194694320-d42d7e6c-c339-46e4-9f04-07da2273c900.jpg">
+    </kbd>
+
+<br>
+
+## **:clipboard: 원격 브랜치 복사**
+원격저장소의 리모트 브랜치를 통해 로컬 저장소에도 새로운 브랜치를 생성해 동기화할 수 있습니다.<br>
+>※ 로컬저장소와 원격저장소의 브랜치 목록은 서로 다를 수 있습니다.
+```bash
+$ git checkout -b [새이름] origin/브랜치이름
+```
