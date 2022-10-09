@@ -65,7 +65,7 @@ $ git checkout -b [임시브랜치이름] [origin/브랜치이름] # [임시브�
 
 <br>
 
-[다음 - 브랜치 전송](11_branch-remove.md)
+[다음 - 브랜치 삭제](11_branch-remove.md)
 
 <br>
 
