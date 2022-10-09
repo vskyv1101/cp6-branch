@@ -54,7 +54,7 @@
 ## **:outbox_tray: 브랜치 업로드**
 로컬저장소에만 브랜치를 생성했고, 이 브랜치는 원격저장소에 자동 등록되지 않습니다.
 >※ 원격 저장소를 `등록`만 했기 때문에 아직 리모트 브랜치는 없습니다.<br>
->※ 리모트 브랜치는 서버 간에 통신을 한 후에 생성됩니다.
+>※ 리모트 브랜치는 서버 간에 통신한 후에 생성됩니다.
 ### **1. 원격저장소 리모트 브랜치 확인**
 ```bash
 $ git remote show origin # origin은 원격 브랜치명
@@ -66,7 +66,7 @@ $ git remote show origin # origin은 원격 브랜치명
 <br>
 
 ### **2. 원격저장소 동기화**
-push를 하게되면 원격저장소는 로컬저장소와 동일한 branch를 생성하게 됩니다.
+push를 하게 되면 원격저장소는 로컬저장소와 동일한 branch를 생성하게 됩니다.
 >※ 원격저장소는 첫 생성 시 브랜치가 없는 상태입니다.
 ```bash
 $ git push origin main # origin은 원격저장소 별칭, main은 브랜치 이름
@@ -105,7 +105,7 @@ $ git push origin main # origin은 원격저장소 별칭, main은 브랜치 이
 ## **:bookmark: 이름이 다른 브랜치**
 로컬저장소와 원격저장소의 브랜치 이름을 동일하게 사용하기 어려울 때가 있습니다.<br>
 >※ 다른 개발자가 만든 원격 서버의 브랜치를 테스트할 때<br>
->&nbsp;&nbsp;&nbsp;&nbsp;자신의 브랜치 이름과 동일하면 충돌이 생기게됩니다.
+>&nbsp;&nbsp;&nbsp;&nbsp;자신의 브랜치 이름과 동일하면 충돌이 생기게 됩니다.
 
 ### 브랜치를 수동으로 지정할 때, 콜론(:)으로 구분합니다.
 ```bash
@@ -148,7 +148,7 @@ clone은 원격 저장소의 모든 브랜치 정보를 한 번에 다 가져오
 $ git branch -v # 로컬저장소의 브랜치 목록 확인
 $ git branch -r # 원격저장소의 브랜치 목록 확인
 $ git branch -a # 모든 브랜치 목록 확인
-$ git branch -vv # vv속성 - 트래킹 브랜치 정보 확인
+$ git branch -vv # vv 속성 - 트래킹 브랜치 정보 확인
 ```
 <kbd>
 <img src="https://user-images.githubusercontent.com/45596014/194714635-d05a96cc-5c26-4ea9-8772-819a0eb2cc88.jpg">
@@ -157,7 +157,7 @@ $ git branch -vv # vv속성 - 트래킹 브랜치 정보 확인
 <br>
 
 ### 3. 복제된 저장소에 새로운 업스트림 만들기<br>
-다른 브랜치를 pull 받아 트래킹 브랜치를 활성화 하거나, 직접 트래킹 브랜치를 지정할 수 있습니다.
+다른 브랜치를 pull 받아 트래킹 브랜치를 활성화하거나, 직접 트래킹 브랜치를 지정할 수 있습니다.
 - 업스트림 동작을 위한 트래킹 브랜치는 직접 명령어를 실행하여 생성할 수 있습니다.
     >※ [이전](#bookmark-이름이-다른-브랜치)에 feature 브랜치를 function 브랜치로 등록했습니다.
 ```bash
@@ -188,7 +188,7 @@ $ git push
 </kbd>
 
 ### 6.  원본 저장소로 이동 후 확인
-원본저장소의 브랜치를 feature로 바꾸고 pull을 하게되면,<br>
+원본저장소의 브랜치를 feature로 바꾸고 pull을 하게 되면,<br>
 원본저장소의 트래킹 브랜치에 따라 `원격저장소의 function 브랜치`가<br>
 `원본저장소의 feature 브랜치`로 pull 됩니다.
 ```bash
@@ -207,7 +207,7 @@ $ cat test.md # 내용 확인
 원격저장소의 리모트 브랜치를 통해 로컬 저장소에도 새로운 브랜치를 생성해 동기화할 수 있습니다.<br>
 >※ 로컬저장소와 원격저장소의 브랜치 목록은 서로 다를 수 있습니다.
 ```bash
-$ git checkout -b [새이름] origin/브랜치이름
+$ git checkout -b [새 이름] origin/브랜치이름
 ```
 
 ### 1. 브랜치 생성<br>
@@ -253,7 +253,7 @@ $ git push
 
 ## **:link: 업스트림 연결**
 기존 브랜치를 업스트림으로 직접 설정이 가능합니다.
->※ 업스르팀을 직접 설정하면 원격 저장소로 트래킹 브랜치가 설정됩니다.
+>※ 업스트림을 직접 설정하면 원격 저장소로 트래킹 브랜치가 설정됩니다.
 ```bash
 $ git branch -u origin/브랜치이름 # u 옵션 - [--set-upstream-to]의 약자
 ```
@@ -275,7 +275,7 @@ $ git branch -u origin/브랜치이름 # u 옵션 - [--set-upstream-to]의 약�
     <img src="https://user-images.githubusercontent.com/45596014/194700426-f9b9edce-fb2d-47a6-9793-2b6c23ddc827.jpg">
     </kbd>
 
-3. bbb브랜치와 연결할 수 있는 새브랜치 생성
+3. bbb 브랜치와 연결할 수 있는 새 브랜치 생성
 
     ```bash
     $ git checkout -b bug # bug 브랜치 생성
