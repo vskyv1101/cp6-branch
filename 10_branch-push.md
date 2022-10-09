@@ -35,7 +35,7 @@ error: insufficient permission for adding an object to repository database
 ```
 직접 서버를 운영한다면 아래와 같이 권한을 줄 수 있습니다.
 ```bash
-$ chmod -R g+ws * # 그룹에 write, 
+$ chmod -R g+ws *
 $ chgrp -R git *
 ```
 
