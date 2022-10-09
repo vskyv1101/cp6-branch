@@ -77,3 +77,11 @@ $ git push origin --delete [리모트브랜치이름]
 <kbd>
 <img src="https://user-images.githubusercontent.com/45596014/194721116-e4805267-7afa-4a0c-a78f-a6b4314f96f8.jpg">
 </kbd>
+
+<br><br>
+
+[이전 - 브랜치 전송](10_branch-push)
+
+<br>
+
+[목록](README.md)
