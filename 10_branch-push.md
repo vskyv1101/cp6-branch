@@ -1,3 +1,9 @@
+[목록][목록] | [이전][이전] | [다음][다음]
+
+[목록]: README.md "목록"
+[이전]: 09_remote-branch.md "이전"
+[다음]: 11_branch-remove.md "다음"
+
 # **:outbox_tray: 브랜치 전송**
 ```PROPERTIES
 로컬저장소의 브랜치를 원격저장소로 전송하는 다른 방법이 있습니다.
