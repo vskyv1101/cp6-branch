@@ -1,3 +1,8 @@
+[목록][목록] | [이전][이전]
+
+[목록]: README.md "목록"
+[이전]: 10_branch-push.md "이전"
+
 # **:wastebasket: 브랜치 삭제**
 ```PROPERTIES
 브랜치를 삭제하는 것은 그 브랜치의 내용과 커밋을 모두 삭제하는 것입니다.
@@ -80,7 +85,7 @@ $ git push origin --delete [리모트브랜치이름]
 
 <br><br>
 
-[이전 - 브랜치 전송](10_branch-push)
+[이전 - 브랜치 전송](10_branch-push.md)
 
 <br>
 
